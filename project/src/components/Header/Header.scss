@@ -1,0 +1,24 @@
+.header {
+  margin: 0 auto;
+  &__container {
+
+    background-color: pink;
+    display: flex;
+    height: 180px;
+  }
+
+  &__logo {
+    margin-right: 100px;
+  }
+}
+
+li {
+  margin-right: 20px;
+}
+
+li:first-child {
+  margin-left: 80px;
+}
+li:last-child{
+  margin-right: 0px;
+}
