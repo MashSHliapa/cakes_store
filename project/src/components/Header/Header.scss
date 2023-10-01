@@ -8,7 +8,7 @@
   }
 
   &__logo {
-    margin-right: 100px;
+    // border: 1px purple dotted;
   }
 }
 
@@ -17,8 +17,12 @@ li {
 }
 
 li:first-child {
-  margin-left: 80px;
+  margin-left: 20px;
 }
 li:last-child{
   margin-right: 0px;
+}
+
+.navbar-brand {
+  margin-bottom: 50px;
 }
