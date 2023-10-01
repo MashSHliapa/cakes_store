@@ -7,9 +7,6 @@
     height: 180px;
   }
 
-  &__logo {
-    // border: 1px purple dotted;
-  }
 }
 
 li {
@@ -21,8 +18,4 @@ li:first-child {
 }
 li:last-child{
   margin-right: 0px;
-}
-
-.navbar-brand {
-  margin-bottom: 50px;
 }

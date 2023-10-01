@@ -17,19 +17,19 @@ export function Header() {
             {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button> */}
-            <div className="collapse navbar-collapse" id="navbarNav">
+            {/* <div className="collapse navbar-collapse" id="navbarNav"> */}
               <ul className="navbar-nav d-flex justify-content-between">
                 {/* <li className="nav-item">
                   <a className="nav-link active" aria-current="page" href="#">Торты</a>
                 </li> */}
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Свадебные торты</a>
+                  <NavLink to="/cakes/wedding_cakes" className="nav-link">Свадебные торты</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Детские торты</a>
+                  <NavLink to="/cakes/children_cakes" className="nav-link">Детские торты</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Пирожные</a>
+                  <NavLink to="/cakes/pies" className="nav-link">Пирожные</NavLink>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">Декорации</a>
@@ -47,7 +47,7 @@ export function Header() {
                   <a className="nav-link" href="#">Обо мне</a>
                 </li>
               </ul>
-            </div>
+            {/* </div> */}
           </div>
         </nav>
       </div>

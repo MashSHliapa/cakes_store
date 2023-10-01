@@ -10,7 +10,7 @@ export function Cakes() {
   const cakesPage1 = cakes.slice(0, 6).map((item) => <CakesCard cake={item} key={item.id} />)
   const cakesPage2 = cakes.slice(6, 12).map((item) => <CakesCard cake={item} key={item.id} />)
   const cakesPage3 = cakes.slice(12, 18).map((item) => <CakesCard cake={item} key={item.id} />)
-  const cakesPage4 = cakes.slice(18, 20).map((item) => <CakesCard cake={item} key={item.id} />)
+  const cakesPage4 = cakes.slice(18, 22).map((item) => <CakesCard cake={item} key={item.id} />)
   return (
     <div className="cakes">
       <ul className="cakes__list">

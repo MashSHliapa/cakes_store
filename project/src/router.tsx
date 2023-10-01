@@ -2,6 +2,9 @@ import { Navigate, createBrowserRouter } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { Cakes } from "./pages/Cakes";
 import { Cake } from "./pages/Cake";
+import { WeddingCakes } from "./pages/WeddingCakes";
+import { ChildrenCakes } from "./pages/ChildrenCakes";
+import { Pies } from "./pages/Pies";
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +21,18 @@ export const router = createBrowserRouter([
       {
         path: 'selected/:cakeId',
         element: <Cake />
+      },
+      {
+        path: '/cakes/wedding_cakes',
+        element: <WeddingCakes />
+      },
+      {
+        path: '/cakes/children_cakes',
+        element: <ChildrenCakes />
+      },
+      {
+        path: '/cakes/pies',
+        element: <Pies />
       },
     ]
   }

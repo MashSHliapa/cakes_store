@@ -28,6 +28,7 @@ const cakesSlice = createSlice({
     data: [
       {
         id: 1,
+        category: 'children',
         title: 'Торт котик',
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
         weight: '500 г',
@@ -36,6 +37,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 2,
+        category: 'children',
         title: 'Торт 1 годик',
         subtitle: 'Десерт lorem ipsum Десерт lorem ipsumДесерт lorem ipsumДесерт lorem ipsumДесерт lorem ipsumДесерт lorem ipsumДесерт lorem ipsumДесерт lorem ipsumДесерт lorem ipsumДесерт lorem ipsum',
         price: '120 руб',
@@ -44,6 +46,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 3,
+        category: 'birthday',
         title: 'Торт денб рождение',
         subtitle: 'Десерт lorem ipsum Десерт lorem ipsumДесерт lorem ipsumДесерт lorem ipsumДесерт',
         price: '180 руб',
@@ -52,6 +55,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 4,
+        category: 'birthday',
         title: 'Торт день рождение',
         subtitle: 'Десерт lorem ipsum Десерт lorem ipsumДесерт lorem ipsumДесерт lorem ipsumДесерт',
         price: '180 руб',
@@ -60,6 +64,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 5,
+        category: 'children',
         title: 'Торт день рождение',
         subtitle: 'Десерт ',
         price: '180 руб',
@@ -68,6 +73,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 6,
+        category: 'birthday',
         title: 'Торт день рождение',
         subtitle: 'Десерт ',
         price: '180 руб',
@@ -76,6 +82,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 7,
+        category: 'birthday',
         title: 'Торт день рождение',
         subtitle: 'Десерт ',
         price: '180 руб',
@@ -84,6 +91,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 8,
+        category: 'birthday',
         title: 'Торт денб рождение',
         subtitle: 'Десерт ',
         price: '180 руб',
@@ -92,6 +100,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 9,
+        category: 'christening',
         title: 'Торт денб рождение',
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
         price: '180 руб',
@@ -100,6 +109,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 10,
+        category: 'for_men',
         title: 'Торт денб рождение',
         subtitle: 'Десерт ',
         price: '180 руб',
@@ -108,6 +118,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 11,
+        category: 'for_women',
         title: 'Торт денб рождение',
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
         price: '180 руб',
@@ -116,6 +127,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 12,
+        category: 'for_women',
         title: 'Торт денб рождение',
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
         price: '180 руб',
@@ -124,6 +136,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 13,
+        category: 'pie',
         title: 'Торт денб рождение',
         subtitle: 'Десерт ',
         price: '180 руб',
@@ -132,6 +145,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 14,
+        category: 'pie',
         title: 'Торт денб рождение',
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день!',
         price: '180 руб',
@@ -140,6 +154,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 15,
+        category: 'birthday',
         title: 'Торт денб рождение',
         subtitle: 'Десерт ',
         price: '180 руб',
@@ -148,6 +163,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 16,
+        category: 'birthday',
         title: 'Торт денб рождение',
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
         price: '180 руб',
@@ -156,6 +172,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 17,
+        category: 'children',
         title: 'Торт денб рождение',
         subtitle: 'Десерт ',
         price: '180 руб',
@@ -164,6 +181,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 18,
+        category: 'children',
         title: 'Торт денб рождение',
         subtitle: 'Десерт ',
         price: '180 руб',
@@ -172,6 +190,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 19,
+        category: 'children',
         title: 'Торт денб рождение',
         subtitle: 'Десерт ',
         price: '180 руб',
@@ -180,6 +199,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 20,
+        category: 'wedding',
         title: 'Торт денб рождение',
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
         price: '180 руб',
@@ -188,6 +208,7 @@ const cakesSlice = createSlice({
       },
       {
         id: 21,
+        category: 'birthday',
         title: 'Торт денб рождение',
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
         price: '180 руб',
