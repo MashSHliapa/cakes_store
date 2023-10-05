@@ -1,21 +1,80 @@
 .header {
   margin: 0 auto;
-  &__container {
 
-    background-color: pink;
-    display: flex;
-    height: 180px;
+  &__container {
+    padding: 0 20px;
+    background-color: #F0EADA;
+    padding-bottom: 20PX;
   }
 
-}
+  &__visual {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 
-li {
-  margin-right: 20px;
-}
+  &__navbar {
 
-li:first-child {
-  margin-left: 20px;
-}
-li:last-child{
-  margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.2);
+  }
+
+  &__nav-list {}
+
+  &__data {
+    // border: 8px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    margin: 0 40px;
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // border: 1px solid rgb(0, 0, 0);
+  }
+
+  &__name {
+    font-family: 'Dancing Script';
+    font-size: 80px;
+    font-weight: bolder;
+    color: #827C76;
+  }
+
+  &__title {
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    font-weight: bolder;
+    color: #827C76;
+    margin-bottom: 50px;
+  }
+
+  &__slogan {
+    margin-top: 60px;
+    font-family: 'Dancing Script';
+    font-size: 50px;
+    font-weight: 800;
+    color: #ACC6E6;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 3px -4px 5px rgb(54, 54, 54);
+  }
+
+  &__photo {
+    border: 14px solid #BAA99B;
+    border-radius: 55px;
+    margin-left: 40px;
+  }
+
+  img {
+    border-radius: 40px;
+  }
+
 }

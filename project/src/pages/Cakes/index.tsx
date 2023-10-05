@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'
 import { CakesCard } from '../../components/CakesCard'
 import './Cakes.scss'
 import { PaginationCakes } from '../../components/PaginationCakes'
+import { Title } from '../../components/Title'
 export function Cakes() {
   const cakes = useSelector((state) => state.cakes.data) // для получения массива постов из store.
   const { pageNumber } = useParams()
@@ -13,7 +14,8 @@ export function Cakes() {
   const cakesPage4 = cakes.slice(18, 22).map((item) => <CakesCard cake={item} key={item.id} />)
   return (
     <div className="cakes">
-      <ul className="cakes__list">
+      <Title>Торты для Вашего праздника!</Title>
+      <ul className="cakes__list m-3">
         {pageNumber && parseInt(pageNumber) == 1 ? cakesPage1 : ''}
         {pageNumber && parseInt(pageNumber) == 2 ? cakesPage2 : ''}
         {pageNumber && parseInt(pageNumber) == 3 ? cakesPage3 : ''}

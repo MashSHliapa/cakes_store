@@ -3,6 +3,7 @@ import { ModalPreview } from '../ModalPreview/ModalPreview'
 import './CakeCard.scss'
 import { setModalPreview } from '../../redux/modalPreviewSlice'
 import { Image } from 'react-bootstrap'
+import { Title } from '../Title'
 
 export function CakeCard(props) {
 
@@ -19,7 +20,7 @@ export function CakeCard(props) {
 
   return (
     <div className="card-cake">
-      <div className="card-cake__title">{props.cake.title}</div>
+      <Title>{props.cake.title}</Title>
       <div className="card-cake__image-container">
         <a href="#" role="button" onClick={handleClick}>
           <Image src={props.cake.image} width="170" height="200" alt="" ></Image>

@@ -1,0 +1,23 @@
+.navbar {
+  padding: 25px 0;
+}
+
+li {
+  margin-right: 90px;
+  transition: transform 0.5s ease;
+}
+
+li:hover {
+  transform: scale(1.2);
+}
+
+li:last-child {
+  margin-right: 0px;
+}
+
+.nav-link {
+  font-family: 'Dancing Script';
+  font-size: 20px;
+  font-weight: 900;
+  color: #827C76;
+}

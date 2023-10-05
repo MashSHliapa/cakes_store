@@ -1,8 +1,10 @@
 .cakes {
-  margin: 40px;
+  margin: 50px 0 ;
+
   &__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
   }
 }

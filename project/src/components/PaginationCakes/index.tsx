@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import './Pagination.scss'
 export function PaginationCakes() {
 
   function renderPagination() {
@@ -6,7 +7,7 @@ export function PaginationCakes() {
     let pageNumber = 1
     while (pageNumber < 5) {
       pagination.push(
-        <li className="page-item mt-5" key={pageNumber}>
+        <li className="page-item" key={pageNumber}>
           <NavLink to={`/cakes/pages/${pageNumber}`} className={({ isActive }) =>
             isActive ? "page-link active" : "page-link"
           }>{pageNumber}</NavLink>
@@ -18,9 +19,9 @@ export function PaginationCakes() {
   }
 
   return (
-    <div className="pagination d-flex justify-content-center">
-      <nav aria-label="Page navigation example">
-        <ul className="pagination">
+    <div className="pagination-cakes d-flex justify-content-around mt-5">
+      <nav aria-label="page">
+        <ul className="pagination ">
           {renderPagination()}
         </ul>
       </nav>
