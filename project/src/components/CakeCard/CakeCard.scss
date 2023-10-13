@@ -1,17 +1,16 @@
 .card-cake {
   text-align: center;
-  margin: 20px;
-  border: 3px solid rgb(241, 149, 204);
+  margin: 10px auto;
+
+  max-width: 500px;
+  background-color: #F0EADA;
+  border-radius: 5px;
+  padding: 30px;
 
 
-  &__image-container {
-    margin: 0 auto;
-    border-radius: 5px;
-    width: 338px;
-    height: 300px;
-    background-color: #F4EEFD;
-    text-align: center;
-    padding-top: 50px;
+  &__image img {
+   width: 350px;
+   height: 400px;
   }
 
   &__subtitle {

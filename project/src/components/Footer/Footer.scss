@@ -1,8 +1,18 @@
 .footer {
-  color: black;
-  background-color: rgb(201, 203, 203);
-  padding: 10px;
+  margin: 0 auto;
+  &__section {}
 
+
+  background-color: rgb(150, 150, 150);
+  padding: 10px;
+  background: url('../images/wave_blue.jpg') 800px 0px no-repeat rgb(150, 150, 150);
+
+  &__container {
+    color: black;
+    margin: 0 auto;
+    max-width: 1500px;
+    // background: url('../images/wave_blue.jpg') no-repeat rgb(150, 150, 150);
+  }
   &__contacts {
     display: flex;
   }

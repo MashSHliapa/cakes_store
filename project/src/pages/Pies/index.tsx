@@ -4,9 +4,8 @@ import { Title } from "../../components/Title"
 export function Pies() {
 
   const cakes = useSelector((state) => state.cakes.data)
-  const pie_cakes = cakes.filter((item) => item.category === 'pie')
-
-  const pie = pie_cakes.map((item) => <CakesCard cake={item} key={item.id} />)
+  const filterPies = cakes.filter((item) => item.category === 'pie')
+  const pie = filterPies.map((item) => <CakesCard cake={item} key={item.id} />)
 
   return (
     <div className="pies">

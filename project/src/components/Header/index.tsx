@@ -7,8 +7,8 @@ import photo from '../images/photo.jpg'
 export function Header() {
   return (
     <div className="header">
-      <div className="header__container">
-        <div className="header__visual">
+      <div className="header__section">
+        <div className="header__container">
           <div className="header__navbar">
             <div className="header__logo">
               <Logo />
@@ -28,8 +28,6 @@ export function Header() {
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   )

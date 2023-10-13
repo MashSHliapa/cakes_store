@@ -5,7 +5,7 @@ export function PaginationCakes() {
   function renderPagination() {
     const pagination = []
     let pageNumber = 1
-    while (pageNumber < 5) {
+    while (pageNumber < 8) {
       pagination.push(
         <li className="page-item" key={pageNumber}>
           <NavLink to={`/cakes/pages/${pageNumber}`} className={({ isActive }) =>

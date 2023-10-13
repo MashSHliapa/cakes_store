@@ -37,10 +37,10 @@ export function Menu(props) {
           <NavLink to="/cakes/pies" className="nav-link">Пирожные</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/cakes/pies" className="nav-link">Торты для мужчин</NavLink>
+          <NavLink to="/cakes/for_men" className="nav-link">Торты для мужчин</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/cakes/pies" className="nav-link">Торты для леди</NavLink>
+          <NavLink to="/cakes/for_women" className="nav-link">Торты для леди</NavLink>
         </li>
         <li className="nav-item">
           <NavLink to="/cakes/pies" className="nav-link me-5">Торты На Крещение</NavLink>

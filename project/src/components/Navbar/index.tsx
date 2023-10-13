@@ -1,6 +1,4 @@
 import './Navbar.scss'
-import { NavLink } from 'react-router-dom'
-import { useEffect, useState } from 'react'
 import { Menu } from '../Menu'
 
 export function Navbar() {
@@ -8,7 +6,7 @@ export function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        <ul className="navbar-nav d-flex justify-content-between">
+        <ul className="navbar-nav d-flex justify-content-between flex-row">
           <Menu />
           <li className="nav-item">
             <a className="nav-link" href="#">Начинки</a>

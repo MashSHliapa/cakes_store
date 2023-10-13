@@ -4,9 +4,8 @@ import { Title } from "../../components/Title"
 export function WeddingCakes() {
 
   const cakes = useSelector((state) => state.cakes.data)
-  const filterWeddingCakes = cakes.filter((item) => item.category === 'wedding')
-
-  const weddingCakes = filterWeddingCakes.map((item) => <CakesCard cake={item} key={item.id} />)
+  const filterCakes = cakes.filter((item) => item.category === 'wedding')
+  const weddingCakes = filterCakes.map((item) => <CakesCard cake={item} key={item.id} />)
 
   return (
     <div className="wedding-cakes">

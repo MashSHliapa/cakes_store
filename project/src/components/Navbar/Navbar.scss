@@ -21,3 +21,46 @@ li:last-child {
   font-weight: 900;
   color: #827C76;
 }
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    padding: 0px 15px;
+  }
+
+  li {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .navbar {
+    padding: 0px 5px;
+  }
+
+  li {
+    margin-right: 40px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0px 15px;
+  }
+
+  li {
+    margin-right: 20px;
+  }
+
+  .nav-link {
+    font-family: 'Dancing Script';
+    font-size: 16px;
+    font-weight: 700;
+    color: #827C76;
+  }
+}
