@@ -21,8 +21,9 @@ import peppa from '../components/images/peppa.jpg'
 import pony from '../components/images/pony.jpg'
 import wedding_hearts from '../components/images/wedding_hearts.jpg'
 import crown_black from '../components/images/crown_black.jpg'
-import pone4 from '../components/images/pony4.jpg'
+import pony4 from '../components/images/pony4.jpg'
 import doll4 from '../components/images/doll4.jpg'
+import pony_5 from '../components/images/pony_5.jpg'
 import open_heart1 from '../components/images/open_heart1.jpg'
 import open_heart5 from '../components/images/open_heart5.jpg'
 import open_heart4 from '../components/images/open_heart4.jpg'
@@ -238,7 +239,7 @@ const cakesSlice = createSlice({
         title: 'Торт денб рождение',
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
         weight: '1300 г',
-        image: pone4,
+        image: pony4,
       },
       {
         id: 23,
@@ -254,7 +255,7 @@ const cakesSlice = createSlice({
         title: 'Торт денб рождение',
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
         weight: '1300 г',
-        image: doll4,
+        image: pony5,
       },
       {
         id: 25,
@@ -391,7 +392,7 @@ const cakesSlice = createSlice({
         category: 'children',
         title: 'Торт денб рождение',
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
-        image: pony5,
+        image: pony_5,
       },
       {
         id: 44,
@@ -497,7 +498,7 @@ const cakesSlice = createSlice({
         title: 'Торт денб рождение',
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
         image: popsicle1,
-      },
+      }
     ]
   },
   reducers: {

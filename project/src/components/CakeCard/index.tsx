@@ -20,14 +20,15 @@ export function CakeCard(props) {
 
   return (
     <div className="card-cake">
-      <Title>{props.cake.title}</Title>
+      <div className='card-cake__title'>{props.cake.title}</div>
       <div className="card-cake__image">
         <a href="#" role="button" onClick={handleClick}>
-          <Image src={props.cake.image} width="170" height="200" alt="" ></Image>
+          <Image src={props.cake.image} width="250" height="300" alt="" ></Image>
         </a>
       </div>
       <div className="card-cake__subtitle">{props.cake.subtitle}</div>
-      <div className="card-cake__weight">Вес: {props.cake.weight}</div>
+      <div className="card-cake__realization">{props.cake.realization}</div>
+      <div className="card-cake__weight"><b>Минимальный вес:</b> {props.cake.weight}</div>
       <ModalPreview image={props.cake.image} show={showModal} onHide={handleHide} title={props.cake.title} />
     </div>
   )
