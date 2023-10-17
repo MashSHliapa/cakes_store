@@ -7,7 +7,7 @@ export function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        <ul className="navbar-nav d-flex justify-content-between flex-row">
+        <ul className="navbar-nav">
           <Menu />
           <li className="nav-item">
             <NavLink to="/cakes/fillings" className="nav-link">Начинки</NavLink>

@@ -1,20 +1,21 @@
 .header {
-  &__section {
-    // padding: 0 20px 40px;
-    background: #9cabbe;
-  }
+  background: #9cabbe;
+
+  // &__container {
+  //   padding: 10px;
+  // }
 
   &__container {
-    max-width: 1700px;
+    max-width: 1300px;
     margin: 0 auto;
-    background: url('../images/flower_blue.png') 1380px 40px no-repeat #9cabbe;
-    padding: 0 20px 40px;
+    padding: 10px;
   }
 
-  &__navbar {
+  &__body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   &__logo:hover {
@@ -22,137 +23,29 @@
     transform: scale(1.2);
   }
 
-  &__nav-list {}
-
-  &__data {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  &__about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__name {
-    font-family: 'Dancing Script';
-    font-size: 80px;
-    font-weight: bolder;
-    color: #4c433b;
-  }
-
-  &__title {
-    text-align: center;
-    font-family: 'Dancing Script';
-    font-size: 40px;
-    font-weight: bolder;
-    color: #827C76;
-  }
-
-  &__slogan {
-    margin-top: 60px;
-    padding: 15px;
-    font-family: 'Dancing Script';
-    font-size: 50px;
-    font-weight: 800;
-    color: #ACC6E6;
-    font-style: italic;
-    text-align: center;
-    text-shadow: 2px -3px 4px rgb(54, 54, 54);
-  }
-
-  &__photo {
-    border: 14px solid #BAA99B;
-    border-radius: 55px;
-    margin-right: 40px;
+  &__nav-list {
 
   }
 
-  img {
-    border-radius: 40px;
+  &__menu-burger {
+    display: none;
+    padding: 0 20px;
   }
 }
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .header {
-    &__name {
-      font-size: 55px;
-      font-weight: bolder;
-    }
-
-    &__title {
-      font-size: 40px;
-      font-weight: 700;
-    }
-
-    &__slogan {
-      margin-top: 40px;
-      font-family: 'Dancing Script';
-      font-size: 40px;
-      font-weight: 800;
-      color: #ACC6E6;
-      font-style: italic;
-      text-align: center;
-      text-shadow: 1px -2px 2px rgb(54, 54, 54);
-    }
-
-    &__photo {
-
-      border-radius: 55px;
-      margin-left: 40px;
-
-    }
-
-    // img {
-    //   max-width: 100%;
-    //   max-height: 70%;
-    // }
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .header {
-    &__name {
-      font-size: 60px;
-      font-weight: bolder;
-    }
-
-    &__title {
-      font-size: 30px;
-      font-weight: 700;
-    }
-
-    &__slogan {
-      margin-top: 30px;
-      font-family: 'Dancing Script';
-      font-size: 30px;
-      font-weight: 800;
-      color: #ACC6E6;
-      font-style: italic;
-      text-align: center;
-      text-shadow: 1px -2px 2px rgb(54, 54, 54);
-    }
-
-    &__photo {
-      border: none
-    }
-
-    &__photo img {
-      border: 12px solid #BAA99B;
-      border-radius: 55px;
-      margin-left: 40px;
-      max-width: 350px;
-      max-height: 350px;
+    &__container {
+      max-width: 400px;
     }
   }
 }
-
 @media screen and (max-width: 768px) {
   .header {
     &__nav-list {
       display: none;
+    }
+    &__menu-burger {
+      display: block;
     }
   }
 }

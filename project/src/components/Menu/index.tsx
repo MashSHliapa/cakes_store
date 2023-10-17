@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './Menu.scss'
 
-export function Menu(props) {
+export function Menu() {
 
   const [openMenu, setOpenMenu] = useState(false)
   function handleClickMenu() {
