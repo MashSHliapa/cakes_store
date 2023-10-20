@@ -3,14 +3,15 @@
   &__section {}
 
 
-  background-color: rgb(150, 150, 150);
+  // background-color: rgb(150, 150, 150);
   padding: 10px;
-  background: url('../images/wave_blue.jpg') 800px 0px no-repeat rgb(150, 150, 150);
+  background: url('../images/wave.jpg') 1100px 0px no-repeat #827C76;
 
   &__container {
     color: black;
     margin: 0 auto;
     max-width: 1500px;
+    height: 200px;
     // background: url('../images/wave_blue.jpg') no-repeat rgb(150, 150, 150);
   }
   &__contacts {

@@ -1,10 +1,6 @@
 .header {
   background: #9cabbe;
 
-  // &__container {
-  //   padding: 10px;
-  // }
-
   &__container {
     max-width: 1300px;
     margin: 0 auto;
@@ -16,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+
   }
 
   &__logo:hover {
@@ -23,27 +20,20 @@
     transform: scale(1.2);
   }
 
-  &__nav-list {
-
-  }
+  &__nav-list {}
 
   &__menu-burger {
     display: none;
     padding: 0 20px;
   }
 }
-@media screen and (max-width: 768px) {
-  .header {
-    &__container {
-      max-width: 400px;
-    }
-  }
-}
+
 @media screen and (max-width: 768px) {
   .header {
     &__nav-list {
       display: none;
     }
+
     &__menu-burger {
       display: block;
     }

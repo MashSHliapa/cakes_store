@@ -5,30 +5,100 @@
   max-width: 450px;
   background-color: #F0EADA;
   padding: 10px;
-  margin-bottom: 20px;
+  margin: 20px 20px;
 
   &__title {
-    min-height: 110px;
-    font-family: 'Dancing Script';
+    min-height: 120px;
     font-size: 25px;
     font-weight: 700;
     color: #4c433b;
     padding: 20px;
+    line-height: 150%;
   }
 
-  &__image {}
+  &__image img {
+    border-radius: 10px;
+  }
 
   &__subtitle {
     padding: 10px;
     min-width: 20px;
     margin: 0 auto;
-    min-height: 100px;
+    min-height: 90px;
   }
 
-  // &__realization {
-  //   min-height: 130px;
-  // }
-
   &__weight {}
+}
 
+@media screen and (max-width: 1200px) {
+  .card-cake {
+    padding: 20px 20px;
+
+    &__title {
+      min-height: 120px;
+      font-size: 25px;
+      font-weight: 700;
+      color: #4c433b;
+      padding: 20px;
+    }
+
+    &__image img {
+      width: 200px;
+      height: 240px;
+    }
+
+    &__subtitle {
+      padding: 5px;
+      min-width: 20px;
+      margin: 0 auto;
+      min-height: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card-cake {
+    padding: 20px 20px;
+
+    &__title {
+      min-height: 40px;
+      font-size: 22px;
+      font-weight: 700;
+      align-items: center;
+    }
+
+    &__image img {
+      width: 200px;
+      height: 240px;
+    }
+
+    &__subtitle {
+      padding: 15px;
+      min-width: 0px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-cake {
+    padding: 15px;
+    min-width: 290px;
+
+    &__title {
+      min-height: 40px;
+      font-size: 18px;
+      font-weight: 700;
+      align-items: center;
+    }
+
+    &__image img {
+      width: 170px;
+      height: 210px;
+    }
+
+    &__subtitle {
+      padding: 5px;
+    }
+  }
 }

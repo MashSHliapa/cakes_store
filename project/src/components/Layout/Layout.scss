@@ -1,9 +1,12 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Dancing Script';
+  line-height: 137%;
 }
 
 .layout {
@@ -11,22 +14,14 @@ body {
   padding: 0;
 
   &__outlet {
-    border: 1px solid #9cabbe;
     margin: 0 auto;
     padding: 50px 0px;
-    max-width: 1200px;
     background-color: #F0EADA;
 
-    background: url('../images/flower_beige.jpg') 0 850px no-repeat, url('../images/flower_beige_right_s.png') 1050px 40px no-repeat #F0EADA;
+    background:  url('../images/flower_beige.jpg') 0 bottom no-repeat, url('../images/flower_beige_right_s.png') right 10px no-repeat #F0EADA;
 
     @media screen and (max-width: 992px) {
-      padding: 20px 20px;
-      max-width: 750px;
-    }
-
-    @media screen and (max-width: 768px) {
-      padding: 20px 20px;
-      max-width: none;
+      padding: 40px 0px;
     }
   }
 }

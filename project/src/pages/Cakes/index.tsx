@@ -19,7 +19,7 @@ export function Cakes() {
   return (
     <div className="cakes">
       <Title>Торты для Вашего праздника!</Title>
-      <ul className="cakes__list pies__list d-flex flex-wrap justify-content-center gap-2 m-3 p-0">
+      <ul className="cakes__list">
         {pageNumber && parseInt(pageNumber) == 1 ? cakesPage1 : ''}
         {pageNumber && parseInt(pageNumber) == 2 ? cakesPage2 : ''}
         {pageNumber && parseInt(pageNumber) == 3 ? cakesPage3 : ''}

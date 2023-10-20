@@ -1,21 +1,19 @@
-.main {
-  background-color: #9cabbe;
-
-  &__container {
-    padding: 10px;
-    background: url('../images/flower_blue.png') 580px 40px no-repeat
-  }
+.about {
+  background: url('../images/flower.png') right -10px no-repeat #9cabbe;
 
   &__data {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 60px;
   }
 
-  &__about {
+  &__description {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 700px;
+    padding: 15px 15px;
   }
 
   &__name {
@@ -23,19 +21,21 @@
     font-size: 80px;
     font-weight: bolder;
     color: #4c433b;
+    padding-bottom: 45px;
   }
 
   &__title {
     text-align: center;
     font-family: 'Dancing Script';
     font-size: 40px;
+    line-height: 135%;
     font-weight: bolder;
     color: #827C76;
   }
 
   &__slogan {
     margin-top: 60px;
-    padding: 15px;
+    line-height: 135%;
     font-family: 'Dancing Script';
     font-size: 50px;
     font-weight: 800;
@@ -48,22 +48,27 @@
   &__photo {
     border: 14px solid #BAA99B;
     border-radius: 55px;
-    margin-right: 40px;
+    margin-right: 60px;
   }
 
-  img {
+  &__photo img {
     border-radius: 40px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .main {
+  .about {
     &__container {
       background: none
     }
 
+    &__description {
+      max-width: 600px;
+    }
+
     &__name {
       font-size: 55px;
+      padding-bottom: 25px;
     }
 
     &__title {
@@ -73,69 +78,79 @@
 
     &__slogan {
       margin-top: 40px;
-      font-size: 40px;
+      font-size: 35px;
       font-weight: 800;
       text-shadow: 1px -2px 2px rgb(54, 54, 54);
+      padding: 0 5px;
     }
 
     &__photo {
       border-radius: 55px;
-      margin-left: 40px;
+    }
+
+    &__photo img {
+      max-width: 450px;
+      max-height: 450px;
     }
   }
 }
 
 @media screen and (max-width: 992px) {
-  .main {
+  .about {
     &__data {
-      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+
+    &__description {
+      max-width: 400px;
     }
 
     &__name {
-      font-size: 60px;
-      font-weight: bolder;
+      font-size: 40px;
+      padding-bottom: 15px;
     }
 
     &__title {
-      font-size: 30px;
+      font-size: 25px;
       font-weight: 700;
     }
 
     &__slogan {
-      margin-top: 30px;
-      font-size: 30px;
+      font-size: 25px;
       font-weight: 600;
+      padding: 0 20px;
     }
 
     &__photo {
-      border: none
+      border: none;
+      margin-right: 0;
     }
 
     &__photo img {
       border: 12px solid #BAA99B;
       border-radius: 55px;
-      margin-left: 40px;
-      max-width: 350px;
-      max-height: 350px;
+      max-width: 360px;
+      max-height: 360px;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .main {
-    &__container {
-      padding: 10px;
-      max-width: 690px;
-      margin: 0 auto;
-    }
+  .about {
+    margin-top: -10px;
 
     &__data {
       flex-wrap: wrap;
     }
 
+    &__description {
+      max-width: none;
+    }
+
     &__name {
-      font-size: 35px;
+      font-size: 30px;
       font-weight: 600;
+      padding-bottom: 15px;
     }
 
     &__title {
@@ -144,19 +159,19 @@
     }
 
     &__slogan {
-      margin-top: 10px;
+      margin-top: 30px;
       font-size: 20px;
       font-weight: 500;
     }
 
     &__photo {
-      border: none
+      border: none;
+      margin-right: 0px;
     }
 
     &__photo img {
-      border: 8px solid #BAA99B;
+      border: 6px solid #BAA99B;
       border-radius: 40px;
-      margin-left: 10px;
       max-width: 200px;
       max-height: 200px;
     }
