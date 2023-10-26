@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,9 +17,10 @@ body {
   &__outlet {
     margin: 0 auto;
     padding: 50px 0px;
-    background-color: #F0EADA;
+    background: linear-gradient(#9cabbe, #F0EADA);
+    // background-color: #F0EADA;
 
-    background:  url('../images/flower_beige.jpg') 0 bottom no-repeat, url('../images/flower_beige_right_s.png') right 10px no-repeat #F0EADA;
+    background: url('../images/flower_beige.jpg') 0 bottom no-repeat, url('../images/flower_beige_right_s.png') right 10px no-repeat #F0EADA;
 
     @media screen and (max-width: 992px) {
       padding: 40px 0px;

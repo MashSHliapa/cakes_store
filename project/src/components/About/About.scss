@@ -1,5 +1,12 @@
 .about {
-  background: url('../images/flower.png') right -10px no-repeat #9cabbe;
+  // background:  #9cabbe;
+  // background: linear-gradient(#9cabbe, rgb(242, 216, 220));
+  background: linear-gradient(#9cabbe, #dce5f1);
+  border-bottom: #9cabbe 1px solid;
+
+  &__container {
+
+  }
 
   &__data {
     display: flex;

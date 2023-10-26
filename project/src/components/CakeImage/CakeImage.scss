@@ -1,0 +1,18 @@
+.image {
+  background-color: #F0EADA;
+
+
+
+  &__container {}
+
+  &__item {
+
+  }
+
+  &__item img {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    position: relative;
+  }
+}

@@ -499,13 +499,25 @@ const cakesSlice = createSlice({
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
         image: popsicle1,
       }
-    ]
+    ],
+    pagesCounter: 5,
+    page: 1,
+    limit: 9,
+    total: 0
   },
   reducers: {
     setCake: (state, action) => {
+
+      console.log(action)
       state.data = action.payload
+      console.log(state.data)
+      // state.total = action.payload.total
+
+      if (state.pagesCounter) return
+      state.pagesCounter = Math.ceil(Number(action.payload.total / state.limit))
     }
-  }
+  },
+
 })
 
 export const { setCake } = cakesSlice.actions

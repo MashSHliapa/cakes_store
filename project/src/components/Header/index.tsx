@@ -1,8 +1,7 @@
-import './Header.scss'
 import { Navbar } from '../Navbar'
 import { Logo } from '../Logo'
-import burger from '../images/burger.png'
 import { MenuBurger } from '../MenuBurger'
+import './Header.scss'
 
 
 export function Header() {

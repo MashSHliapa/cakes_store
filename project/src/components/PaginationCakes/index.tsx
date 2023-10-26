@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom'
 import './Pagination.scss'
+
 export function PaginationCakes() {
 
   function renderPagination() {
     const pagination = []
     let pageNumber = 1
-    while (pageNumber < 8) {
+    while (pageNumber < 6) {
       pagination.push(
         <li className="page-item" key={pageNumber}>
           <NavLink to={`/cakes/pages/${pageNumber}`} className={({ isActive }) =>
@@ -20,8 +21,8 @@ export function PaginationCakes() {
 
   return (
     <div className="pagination-cakes d-flex justify-content-around mt-5">
-      <nav aria-label="page">
-        <ul className="pagination ">
+      <nav aria-label="Page navigation example">
+        <ul className="pagination">
           {renderPagination()}
         </ul>
       </nav>

@@ -16,7 +16,7 @@ export function Navbar() {
             <a className="nav-link" href="#">Доставка</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Контакты</a>
+            <a className="nav-link" href="#contacts">Контакты</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">Обо мне</a>

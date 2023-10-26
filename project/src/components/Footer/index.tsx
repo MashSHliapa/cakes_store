@@ -6,10 +6,10 @@ import telegram from '../images/telegram.png'
 
 export function Footer() {
   return (
-    <div className="footer">
-      <div className="footer-section">
+    <div className="footer" id="contacts">
+      {/* <div className="footer-section">
 
-      </div>
+      </div> */}
       <div className="footer__container">
         <div className="footer__contacts">
           <div className="footer__phone-icons">

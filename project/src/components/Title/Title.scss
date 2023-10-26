@@ -1,20 +1,31 @@
 .title {
-  text-align: center;
-  font-size: 35px;
-  font-weight: bolder;
-  color: #4c433b;
-  padding: 20px;
+
+  &__text {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    line-height: 137%;
+    color: #4c433b;
+    padding: 40px 40px 20px 40px;
+  }
+
+  &__separator {
+    background: #4c433b;
+    max-width: 200px;
+    height: 2px;
+    margin: 5px auto 20px;
+  }
 }
 
 @media screen and (max-width: 992px) {
-  .title {
+  .title__text {
     font-size: 30px;
     padding: 10px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .title {
+  .title__text {
     font-size: 25px;
     padding: 5px;
   }
