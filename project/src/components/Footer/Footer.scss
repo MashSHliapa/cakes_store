@@ -1,38 +1,52 @@
+*{
+  line-height: 171%;
+}
 .footer {
-  margin: 0 auto;
-  &__section {}
-
-
-  // background-color: rgb(150, 150, 150);
   padding: 10px;
-  // background: url('../images/wave.jpg') 1100px 0px no-repeat #827C76;
-  background: url('../images/wave3.png') 1100px 0px no-repeat #827C76;
+  background: url('../images/wave3.png') 1100px -1px no-repeat #827C76;
 
-  &__container {
-    color: black;
-    margin: 0 auto;
-    max-width: 1500px;
-    height: 200px;
-    // background: url('../images/wave_blue.jpg') no-repeat rgb(150, 150, 150);
-  }
-  &__contacts {
+  &__row {
+    min-height: 200px;
+    margin-left: 50px;
     display: flex;
+    max-width: 1000px;
+    align-items: center;
   }
 
-  &__phone-icons {
-    margin-right: 30px;
+  &__contacts {
+    min-width: 480px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 20px;
   }
+
+  &__logo {
+    position: relative;
+    top: -35px;
+    left: 0;
+  }
+
+  &__phone-icons {}
 
   &__contact-slogan {}
 
   &__phone {}
 
-  &__adress {}
+  &__adress {
+  }
 
   &__icons {
     margin-top: 10px;
     display: flex;
-    gap: 6px;
+    gap: 10px;
+  }
+
+  &__return-to-top{
+    align-self: flex-start;
+    max-width: 180px;
+    font-weight: 900;
+    padding: 10px;
+    margin-top: 20px;
   }
 }
-
