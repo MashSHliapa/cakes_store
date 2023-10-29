@@ -23,7 +23,7 @@ const fillingsSlice = createSlice({
     data : [
       {
         id: 1,
-        category: 'fillings',
+        category: 'honneyCake',
         title: 'Бисквитный медовик с черной смородиной',
         subtitle: 'Воздушные медовые бисквиты, конфи с чёрной смородиной мягкий мармелад из чёрной смородины и сливочной смородиновый крем',
         weight: '2,0 кг',
@@ -31,16 +31,16 @@ const fillingsSlice = createSlice({
       },
       {
         id: 2,
-        category: 'fillings',
+        category: 'honneyCake',
         title: 'Шоколадный медовик "Спартак"',
-        subtitle: 'Песочное шоколадные медовые коржи плюс сметанно-сливочный крем. Минимальный вес 1 кг в обсыпке, в креме 1,5 кг ',
+        subtitle: 'Песочное шоколадные медовые коржи плюс сметанно-сливочный крем',
         // realization: 'Изготовлю весом 1,6 кг, 2,0 кг и более',
         weight: '1,6 кг',
         image: filling_spartac,
       },
       {
         id: 3,
-        category: 'fillings',
+        category: 'milk',
         title: 'Птичье молоко',
         subtitle: 'Ванильный бисквит + воздушное суфле + ганаш на темном шоколаде ',
         weight: '0,8 кг',
@@ -48,7 +48,7 @@ const fillingsSlice = createSlice({
       },
       {
         id: 4,
-        category: 'fillings',
+        category: 'honneyCake',
         title: 'Муссовый медовик',
         subtitle: 'Медовые коржи, сметанно-сливочный крем, воздушный мусс на основе белого шоколада, покрыт глянцевой глазурью',
         weight: '0,9 кг',
@@ -56,7 +56,7 @@ const fillingsSlice = createSlice({
       },
       {
         id: 5,
-        category: 'fillings',
+        category: 'carrot',
         title: 'Морковный тортик с апельсином/вишней ',
         subtitle: 'Морковные бисквиты с добавлением грецкого ореха, мака + крем чиз на сливках + апельсиновый курд/вишневое кули + апельсиновое/вишневое конфи',
         weight: '2,7 кг',
@@ -64,7 +64,7 @@ const fillingsSlice = createSlice({
       },
       {
         id: 6,
-        category: 'fillings',
+        category: 'honneyCake',
         title: 'Классический медовик',
         subtitle: 'Песочное медовые коржи плюс сметанно-сливочный крем. Возможно добавить ягодный наполнитель в виде вишни, смородины, клубники, клюквы',
         weight: '1,6 кг',
@@ -73,7 +73,7 @@ const fillingsSlice = createSlice({
       },
       {
         id: 7,
-        category: 'fillings',
+        category: 'oreoPie',
         title: 'Чизкейк "Oreo"',
         subtitle: 'Контент надо добавить Контент надо добавить Контент надо добавить Контент надо добавить Контент надо добавить',
         weight: 'от 6-ти шт.',
@@ -81,7 +81,7 @@ const fillingsSlice = createSlice({
       },
       {
         id: 8,
-        category: 'fillings',
+        category: 'potato',
         title: 'Эскимо " Пирожное Картошка"',
         subtitle: 'Контент надо добавить Контент надо добавить Контент надо добавить Контент надо добавить Контент надо добавить',
         weight: 'от 6-ти шт.',
@@ -89,7 +89,7 @@ const fillingsSlice = createSlice({
       },
       {
         id: 9,
-        category: 'fillings',
+        category: 'oreoCake',
         title: 'Шоколадный с чизкейком oreo',
         subtitle: 'Сочный шоколадный бисквит, мусс на молочном шоколаде, запечённый чизкейк с печеньем oreo и шоколадный крем',
         weight: '2,7 кг',
@@ -97,7 +97,7 @@ const fillingsSlice = createSlice({
       },
       {
         id: 10,
-        category: 'fillings',
+        category: 'napoleon',
         title: 'Карамельный наполеон',
         subtitle: 'Безумно слоеное тесто (по структуре напоминает пирожное из детства “Язычок”) + карамельный заварной крем + нежная карамель',
         // realization: 'Изготовлю весом 1,6 кг, ',
@@ -106,7 +106,7 @@ const fillingsSlice = createSlice({
       },
       {
         id: 11,
-        category: 'fillings',
+        category: 'napoleon',
         title: 'Наполеон с заварным кремом на белом шоколаде',
         subtitle: 'Нежные слоистые коржи+ заварной крем с добавлением белого шоколада ',
         // realization: 'Изготовлю весом 1,6 кг, ',
@@ -115,7 +115,7 @@ const fillingsSlice = createSlice({
       },
       {
         id: 12,
-        category: 'fillings',
+        category: 'honneyCake',
         title: 'Классический медовик',
         subtitle: 'Песочное медовые коржи плюс сметанно-сливочный крем. Возможно добавить ягодный наполнитель в виде вишни, смородины, клубники, клюквы',
         weight: '1,0 кг',
@@ -123,7 +123,7 @@ const fillingsSlice = createSlice({
       },
       {
         id: 13,
-        category: 'fillings',
+        category: 'mousseCake',
         title: 'Муссовый торт “Три шоколада”',
         subtitle: 'Шоколадный брауни + три прослойки мусса с добавлением темного, молочного и белого шоколада',
         // realization: 'Изготовлю весом 1,6 кг, ',
@@ -132,7 +132,7 @@ const fillingsSlice = createSlice({
       },
       {
         id: 14,
-        category: 'fillings',
+        category: 'honneyCake',
         title: 'Бархатный бисквитный медовик с клюквой',
         subtitle: 'Нежные медовые бисквиты + сметанно сливочный крем + кули из клюквы',
         // realization: 'Изготовлю весом 1,6 кг, 2,0 кг и более',
@@ -141,7 +141,7 @@ const fillingsSlice = createSlice({
       },
       {
         id: 15,
-        category: 'fillings',
+        category: 'meringueRoll',
         title: 'Меренговый рулет',
         subtitle: 'Меренговое суфле + крем-чиз на сливках + ягодное кули ',
         weight: '1,0 кг',
@@ -149,7 +149,7 @@ const fillingsSlice = createSlice({
       },
       {
         id: 16,
-        category: 'fillings',
+        category: 'honneyCake',
         title: 'Бисквитный медовик "карамельная нежность"',
         subtitle: 'Воздушные медовые бисквиты в прослойке сметанно-сливочный крем и нежная сливочная карамель',
         weight: '2,0 кг',

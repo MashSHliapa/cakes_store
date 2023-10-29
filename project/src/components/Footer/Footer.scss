@@ -13,7 +13,7 @@
     align-items: center;
   }
 
-  &__contacts {
+  &__blog {
     min-width: 480px;
     display: flex;
     justify-content: space-between;
@@ -27,20 +27,11 @@
     left: 0;
   }
 
-  &__phone-icons {}
-
-  &__contact-slogan {}
+  &__contacts {}
 
   &__phone {}
 
-  &__adress {
-  }
-
-  &__icons {
-    margin-top: 10px;
-    display: flex;
-    gap: 10px;
-  }
+  &__adress {}
 
   &__return-to-top{
     align-self: flex-start;

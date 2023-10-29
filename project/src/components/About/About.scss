@@ -1,11 +1,11 @@
 .about {
-  // background:  #9cabbe;
+  // background:  #dce5f1;
   // background: linear-gradient(#9cabbe, rgb(242, 216, 220));
-  background: linear-gradient(#9cabbe, #dce5f1);
+  // background: linear-gradient(#9cabbe, #dce5f1);
+  background: linear-gradient(#a9c0df, #dce5f1);
   border-bottom: #9cabbe 1px solid;
 
   &__container {
-
   }
 
   &__data {
@@ -19,7 +19,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 700px;
+    max-width: 600px;
     padding: 15px 15px;
   }
 
@@ -46,7 +46,8 @@
     font-family: 'Dancing Script';
     font-size: 50px;
     font-weight: 800;
-    color: #ACC6E6;
+    // color: #ACC6E6;
+    color: #912ba5;
     font-style: italic;
     text-align: center;
     text-shadow: 2px -3px 4px rgb(54, 54, 54);
@@ -55,7 +56,7 @@
   &__photo {
     border: 14px solid #BAA99B;
     border-radius: 55px;
-    margin-right: 60px;
+    margin-right: 50px;
   }
 
   &__photo img {

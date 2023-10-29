@@ -1,0 +1,79 @@
+.cake {
+
+  &__data {
+    margin: 40px auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #4c433b;
+    font-weight: 600;
+  }
+
+  &__blog {
+    padding: 10px;
+    font-size: 20px;
+    max-width: 750px;
+
+  }
+
+  &__slogan {
+    font-size: 28px;
+    padding: 3px;
+  }
+
+  &__condition {
+    font-weight: 500;
+    color: #4c433b;
+    padding: 3px;
+  }
+
+  &__contacts {
+    padding: 3px;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cake {
+
+    &__data {
+      margin: 10px auto;
+      gap: 20px;
+    }
+
+    &__blog {
+      font-size: 18px;
+      max-width: 700px;
+    }
+
+    &__slogan {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cake {
+
+    &__data {
+      margin: 25px auto;
+      flex-wrap: wrap;
+      gap: 10px;
+      text-align: center;
+    }
+
+    &__blog {
+      font-size: 16px;
+    }
+
+    &__slogan {
+      font-size: 16px;
+    }
+
+    &__contacts {
+      text-align: center;
+    }
+  }
+}
