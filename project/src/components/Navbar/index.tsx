@@ -19,7 +19,7 @@ export function Navbar() {
             <a className="nav-link" href="#contacts">Контакты</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Обо мне</a>
+            <NavLink to ="/cakes/about_me" className="nav-link">Обо мне</NavLink>
           </li>
         </ul>
       </div>

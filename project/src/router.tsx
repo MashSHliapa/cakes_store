@@ -8,6 +8,7 @@ import { Pies } from "./pages/Pies";
 import { CakesForMen } from "./pages/ForMen";
 import { CakesForWomen } from "./pages/CakesForWomen";
 import { Fillings } from "./pages/Fillings";
+import { AboutMe } from "./pages/AboutMe";
 
 export const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ export const router = createBrowserRouter([
       {
         path: '/cakes/fillings',
         element: <Fillings />
+      },
+      {
+        path: '/cakes/about_me',
+        element: <AboutMe />
       },
     ]
   }

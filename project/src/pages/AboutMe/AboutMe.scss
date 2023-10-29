@@ -1,0 +1,80 @@
+.about-me {
+  &__blog {
+    font-size: 20px;
+    margin: 50px auto 0;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    line-height: 190%;
+    padding: 5px;
+  }
+
+  &__text span {
+    margin-left: 35px;
+  }
+
+  &__text b {
+    margin: 0 5px;
+    font-size: 22px;
+  }
+
+  &__text em {
+    font-size: 22px;
+    margin: 0 5px;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .about-me {
+    &__blog {
+      font-size: 18px;
+      margin: 30px auto 20px;
+      max-width: 850px;
+    }
+
+    &__text {
+      line-height: 171%;
+    }
+
+    &__text span {}
+
+    &__text b {
+      font-size: 20px;
+
+    }
+
+    &__text em {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-me {
+    &__blog {
+      font-size: 14px;
+      margin: 30px auto 10px;
+      max-width: none;
+      text-align: center;
+    }
+
+    &__text {}
+
+    &__text span {
+      margin-left: 25px;
+    }
+
+    &__text b {
+      font-size: 15px;
+
+    }
+
+    &__text em {
+      font-size: 15px;
+    }
+  }
+}
