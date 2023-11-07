@@ -1,14 +1,15 @@
-import { Navigate, createBrowserRouter } from "react-router-dom";
-import { Layout } from "./components/Layout";
-import { Cakes } from "./pages/Cakes";
-import { Cake } from "./pages/Cake";
-import { WeddingCakes } from "./pages/WeddingCakes";
-import { ChildrenCakes } from "./pages/ChildrenCakes";
-import { Pies } from "./pages/Pies";
-import { CakesForMen } from "./pages/ForMen";
-import { CakesForWomen } from "./pages/CakesForWomen";
-import { Fillings } from "./pages/Fillings";
-import { AboutMe } from "./pages/AboutMe";
+import { Navigate, createBrowserRouter } from "react-router-dom"
+import { Layout } from "./components/Layout"
+import { Cakes } from "./pages/Cakes"
+import { Cake } from "./pages/Cake"
+import { WeddingCakes } from "./pages/WeddingCakes"
+import { ChildrenCakes } from "./pages/ChildrenCakes"
+import { Pies } from "./pages/Pies"
+import { CakesForMen } from "./pages/CakesForMen"
+import { CakesForWomen } from "./pages/CakesForWomen"
+import { Fillings } from "./pages/Fillings"
+import { AboutMe } from "./pages/AboutMe"
+import { CakeSets } from "./pages/CakeSets"
 
 export const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ export const router = createBrowserRouter([
       {
         path: '/cakes/for_women',
         element: <CakesForWomen />
+      },
+      {
+        path: '/cakes/sets',
+        element: <CakeSets />
       },
       {
         path: '/cakes/fillings',
