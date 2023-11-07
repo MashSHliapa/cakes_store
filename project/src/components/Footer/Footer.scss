@@ -1,43 +1,166 @@
-*{
+* {
   line-height: 171%;
 }
-.footer {
-  padding: 10px;
-  background: url('../images/wave3.png') 1100px -1px no-repeat #827C76;
 
-  &__row {
-    min-height: 200px;
-    margin-left: 50px;
-    display: flex;
-    max-width: 1000px;
-    align-items: center;
+a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.footer {
+  background-color: #25221f;
+  color: #F0EADA;
+  padding: 20px 0px;
+
+  &__body {
+    font-size: 18px;
   }
 
-  &__blog {
-    min-width: 480px;
+  &__company {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    align-items: center;
+    max-width: 900px;
+  }
+
+  &__logo img {}
+
+  &__about {
+    padding: 15px;
+    text-align: center;
+  }
+
+  &__name {
     font-size: 20px;
   }
 
-  &__logo {
-    position: relative;
-    top: -35px;
-    left: 0;
+  &__slogan {
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  &__data {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 130px;
+  }
+
+  &__data>div {
+    padding: 10px;
+  }
+
+  &__data span {
+    padding: 5px 10px;
   }
 
   &__contacts {}
 
-  &__phone {}
+  &__info {}
 
-  &__adress {}
+  &__adress {
+    margin-bottom: 7px;
+  }
 
-  &__return-to-top{
-    align-self: flex-start;
-    max-width: 180px;
-    font-weight: 900;
-    padding: 10px;
-    margin-top: 20px;
+  &__delivery {}
+
+  &__return-to-top {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+
+    &__body {
+      font-size: 16px;
+    }
+
+    &__company {
+      max-width: 700px;
+    }
+
+    &__name {
+      font-size: 19px;
+    }
+
+    &__slogan {
+      font-size: 18px;
+    }
+
+    &__data {
+      gap: 20px;
+      padding: 30px 50px;
+    }
+
+    &__return-to-top {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    padding: 20px 0px;
+
+    &__company {
+      max-width: 600px;
+    }
+
+    &__name {
+      font-size: 18px;
+    }
+
+    &__slogan {
+      font-size: 17px;
+    }
+
+    &__data {
+      gap: 15px;
+      padding: 30px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 20px 0px;
+
+    &__company {
+      max-width: 600px;
+    }
+
+    &__logo img {
+      width: 90px;
+      height: 70px;
+      text-align: center;
+
+    }
+
+    &__logo {
+      margin-left: 10px;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+
+    &__slogan {
+      font-size: 15px;
+    }
+
+    &__data {
+      gap: 10px;
+      padding: 0px;
+      flex-wrap: wrap;
+      text-align: center;
+      font-size: 15px;
+    }
   }
 }

@@ -2,11 +2,18 @@ import './Carousel.scss'
 import { useState, cloneElement, useEffect, Children } from 'react'
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa'
 
-const PAGE_WIDTH = 450
+let PAGE_WIDTH = 0
+if (window.innerWidth == 992) {
+  PAGE_WIDTH = 350
+} else if (window.innerWidth == 768) {
+  PAGE_WIDTH = 270
+} else {
+  PAGE_WIDTH = 400
+}
 export const Carousel = ({ children }) => {
 
   const [carousel, setCarousel] = useState([])
-  const [ offset, setOffset ] = useState(0)
+  const [offset, setOffset] = useState(0)
 
   useEffect(() => {
     setCarousel(
@@ -24,14 +31,14 @@ export const Carousel = ({ children }) => {
 
   function handleClickArrowLeft() {
     setOffset((currentOffset) => {
-      const newOffset =  currentOffset + PAGE_WIDTH
+      const newOffset = currentOffset + PAGE_WIDTH
       console.log(newOffset)
       return Math.min(newOffset, 0)
     })
   }
   function handleClickArrowRight() {
     setOffset((currentOffset) => {
-      const newOffset =  currentOffset - PAGE_WIDTH
+      const newOffset = currentOffset - PAGE_WIDTH
 
       const maxOffset = -(PAGE_WIDTH * (carousel.length - 1))
       console.log(newOffset, maxOffset)
@@ -44,9 +51,9 @@ export const Carousel = ({ children }) => {
       <FaChevronLeft className="carousel__arrow" onClick={handleClickArrowLeft} />
       <div className="carousel__window">
         <div className="carousel__all-items"
-        style={{
-          transform: `translateX(${offset}px)`,
-        }}
+          style={{
+            transform: `translateX(${offset}px)`,
+          }}
         >{carousel}</div>
       </div>
       <FaChevronRight className="carousel__arrow" onClick={handleClickArrowRight} />

@@ -32,6 +32,7 @@ import reviews27 from '../../components/images/reviews/reviews27.jpg'
 
 
 export function Reviews() {
+
   return (
     <div className="reviews">
       <div className="reviews__container container">

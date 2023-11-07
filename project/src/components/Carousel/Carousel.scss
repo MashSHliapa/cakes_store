@@ -4,7 +4,7 @@
   max-width: 600px;
   display: flex;
   align-items: center;
-  // border:  1px solid black;
+  border:  1px solid black;
   padding: 40px 0;
 
   &__arrow {
@@ -17,8 +17,8 @@
 
   &__window {
     margin: 0 auto;
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    max-width: 400px;
     overflow: hidden;
   }
 
@@ -28,3 +28,8 @@
     transition: transform 0.5s ease;
   }
 }
+
+
+
+
+
