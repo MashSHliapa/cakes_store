@@ -1,0 +1,43 @@
+.look-all {
+  &__title {
+    margin-left: 60px;
+  }
+
+  &__link {
+    padding: 5px;
+    text-decoration: underline;
+    font-size: 20px;
+    // color: #912ba5;
+    color: purple;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .look-all {
+    &__title {
+      margin-left: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .look-all {
+    &__link {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .look-all {
+    text-align: center;
+
+    &__link {
+      font-size: 14px;
+    }
+
+    &__title {
+      margin: 0px 0px 10px 0px;
+    }
+  }
+}

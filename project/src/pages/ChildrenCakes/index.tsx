@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux"
 import { CakesCard } from "../../components/CakesCard"
 import { Title } from "../../components/Title"
+import { LookAll } from "../../components/LookAll"
 export function ChildrenCakes() {
 
   const cakes = useSelector((state) => state.cakes.data)
@@ -9,6 +10,7 @@ export function ChildrenCakes() {
 
   return (
     <div className="children_cakes">
+      <LookAll />
       <Title>Торты для детей</Title>
       <div className="children_cakes__list d-flex flex-wrap justify-content-center gap-2 m-3">{childrenCakes}</div>
     </div>

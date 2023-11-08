@@ -7,9 +7,9 @@ export function Fillings() {
   const fillings = fillingsState.map((item) => <FillingsCard filling={item} key={item.id} />)
 
   return (
-    <div className="children_cakes">
+    <div className="chapter">
       <Title>Начинки</Title>
-      <div className="children_cakes__list d-flex flex-wrap justify-content-center gap-4 mt-5">{fillings}</div>
+      <div className="chapter__list d-flex flex-wrap justify-content-center gap-4 mt-5">{fillings}</div>
     </div>
   )
 }

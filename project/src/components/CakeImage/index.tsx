@@ -6,11 +6,10 @@ import cake4 from '../images/photo_cake4.png'
 import './CakeImage.scss'
 export function CakeImage() {
   return (
-
     <div className="image">
       <div className="image__container ">
         <div className="image__item">
-          <img src={cake4}   alt="" />
+          <img src={cake4} alt="" />
         </div>
       </div>
     </div>

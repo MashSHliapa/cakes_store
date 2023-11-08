@@ -5,7 +5,7 @@ import './Footer.scss'
 
 export function Footer() {
   return (
-    <footer className="footer" id="contacts">
+    <footer className="footer">
       <div className="footer__container container">
         <div className="footer__body">
           <div className="footer__company">
@@ -19,10 +19,10 @@ export function Footer() {
           </div>
           <div className="footer__box">
             <div className="footer__data">
-              <div className="footer__contacts"><Contacts /></div>
+              <div className="footer__contacts" id="contacts"><Contacts /></div>
               <div className="footer__info">
                 <div className="footer__adress"><b>Адрес самовывоза:</b><span>г. Минск, ул. Белецкого, 14/2</span></div>
-                <div className="footer__delivery"><b>Доставка:</b><span>осуществляется Яндекс доставкой. Свадебные заказы от 4 кг доставляются на место мероприятия</span>
+                <div className="footer__delivery" id="delivery"><b>Доставка:</b><span>осуществляется Яндекс доставкой. Свадебные заказы от 4 кг доставляются на место мероприятия</span>
                 </div>
               </div>
               <div className="footer__return-to-top"><a href="#">Вернуться на главную страницу</a></div>

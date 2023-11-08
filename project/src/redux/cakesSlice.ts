@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit'
 
 import cake1 from '../components/images/cake1.jpg'
 import cake2 from '../components/images/cake2.jpg'
@@ -8,7 +8,6 @@ import bear from '../components/images/bear.jpg'
 import cherry from '../components/images/cherry.jpg'
 import butterfly from '../components/images/butterfly.jpg'
 import balls_black from '../components/images/balls_black.jpg'
-import clouds from '../components/images/clouds.jpg'
 import fish from '../components/images/fish.jpg'
 import flowers from '../components/images/flowers.jpg'
 import leopard_pink from '../components/images/leopard_pink.jpg'
@@ -58,7 +57,11 @@ import cookies from '../components/images/cookies.jpg'
 import raspberries from '../components/images/raspberries.jpg'
 import strawberry from '../components/images/strawberry.jpg'
 import popsicle1 from '../components/images/popsicle1.jpg'
-
+import christening1 from '../components/images/christening1.jpg'
+import christening2 from '../components/images/christening2.jpg'
+import christening3 from '../components/images/christening3.jpg'
+import wedding2 from '../components/images/wedding2.jpg'
+import wedding3 from '../components/images/wedding3.jpg'
 
 
 const cakesSlice = createSlice({
@@ -128,14 +131,6 @@ const cakesSlice = createSlice({
         subtitle: 'Десерт ',
         weight: '1300 г',
         image: balls_black,
-      },
-      {
-        id: 9,
-        category: 'christening',
-        title: 'Торт денб рождение',
-        subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
-        weight: '1300 г',
-        image: clouds,
       },
       {
         id: 10,
@@ -220,7 +215,7 @@ const cakesSlice = createSlice({
       {
         id: 20,
         category: 'wedding',
-        title: 'Торт денб рождение',
+        title: 'Торт для свадьбы',
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
         weight: '1300 г',
         image: wedding_hearts,
@@ -498,7 +493,43 @@ const cakesSlice = createSlice({
         title: 'Торт денб рождение',
         subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
         image: popsicle1,
+      },
+      {
+        id: 59,
+        category: 'christening',
+        title: 'Торт на Крещение',
+        subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
+        image: christening1,
+      },
+      {
+        id: 60,
+        category: 'christening',
+        title: 'Торт на Крещение',
+        subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
+        image: christening2,
+      },
+      {
+        id: 61,
+        category: 'christening',
+        title: 'Торт на Крещение',
+        subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
+        image: christening3,
+      },
+      {
+        id: 62,
+        category: 'wedding',
+        title: 'Торт для свадьбы',
+        subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
+        image: wedding2,
+      },
+      {
+        id: 63,
+        category: 'wedding',
+        title: 'Торт для свадьбы',
+        subtitle: 'Идефльнийший десерт для Вашего праздника! Сочетание вкусов и интереснейший декор подымет настроиение и подарит Вашим гостям прекрасный день! ',
+        image: wedding3,
       }
+
     ],
     pagesCounter: 5,
     page: 1,

@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useEffect, useState, useRef } from 'react'
+import { createScroll } from '../../helpers/createScroll'
 import './Menu.scss'
 
 export function Menu() {
@@ -21,27 +22,17 @@ export function Menu() {
     return () => document.removeEventListener('click', handleClickCloseMenu)
   }, [])
 
-  function handleClickMenuWithScroll() {
-    let yOffset
-    if (window.innerWidth < 768) {
-      yOffset = 400;
-    } else if (window.innerWidth < 992) {
-      yOffset = 500;
-    } else {
-      yOffset = 650;
-    }
-    const element = pageElement.current
-    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset
-    window.scrollTo({ top: y, behavior: 'smooth' })
-    element.removeEventListener('click', handleClickMenuWithScroll)
+  function handleClickPageWithScroll() {
+    createScroll(pageElement)
   }
 
   return (
     <div>
       <li className="nav-item dropdown">
-        <NavLink to="/cakes/pages/1" className="nav-link dropdown-toggle" onClick={handleClickMenu}>Примеры работ</NavLink>
+        {/* <NavLink to="/cakes/pages/1" className="nav-link dropdown-toggle" onClick={handleClickMenu}>Примеры работ</NavLink> */}
+        <a href="#" className="nav-link dropdown-toggle" onClick={handleClickMenu}>Примеры работ</a>
       </li>
-      <ul className={`menu ${openMenu ? 'menu__display-block' : 'menu__display-none'}`} ref={pageElement} onClick={handleClickMenuWithScroll}>
+      <ul className={`menu ${openMenu ? 'menu__display-block' : 'menu__display-none'}`} ref={pageElement} onClick={handleClickPageWithScroll}>
         <li className="nav-item">
           <NavLink to="/cakes/children_cakes" className="nav-link" >Торты для детей</NavLink>
         </li>
@@ -58,7 +49,7 @@ export function Menu() {
           <NavLink to="/cakes/for_women" className="nav-link">Торты для леди</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/cakes/pies" className="nav-link me-5">Торты На Крещение</NavLink>
+          <NavLink to="/cakes/for_christening" className="nav-link me-5">Торты На Крещение</NavLink>
         </li>
         <li className="nav-item">
           <NavLink to="/cakes/sets" className="nav-link me-5">Наборы</NavLink>

@@ -10,6 +10,7 @@ import { CakesForWomen } from "./pages/CakesForWomen"
 import { Fillings } from "./pages/Fillings"
 import { AboutMe } from "./pages/AboutMe"
 import { CakeSets } from "./pages/CakeSets"
+import { CakesForChristening } from "./pages/CakesForChristening"
 
 export const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ export const router = createBrowserRouter([
       {
         path: '/cakes/for_women',
         element: <CakesForWomen />
+      },
+      {
+        path: '/cakes/for_christening',
+        element: <CakesForChristening />
       },
       {
         path: '/cakes/sets',
