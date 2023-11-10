@@ -1,0 +1,35 @@
+.come-back {
+  &__arrow {
+    cursor: pointer;
+  }
+
+  &__arrow>img:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+  }
+
+  &__arrow>img:not(:hover):not(:active):not(:focus) {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+  }
+
+  &__arrow img {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .come-back {
+    &__arrow img {
+      width: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .come-back {
+    &__arrow img {
+      width: 30px;
+    }
+  }
+}

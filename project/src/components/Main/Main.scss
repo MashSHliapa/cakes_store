@@ -1,12 +1,11 @@
-.about {
+.main {
   // background:  #dce5f1;
   // background: linear-gradient(#9cabbe, rgb(242, 216, 220));
   // background: linear-gradient(#9cabbe, #dce5f1);
   background: linear-gradient(#a9c0df, #dce5f1);
   border-bottom: #9cabbe 1px solid;
 
-  &__container {
-  }
+  &__container {}
 
   &__data {
     display: flex;
@@ -65,7 +64,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .about {
+  .main {
     &__container {
       background: none
     }
@@ -104,7 +103,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .about {
+  .main {
     &__data {
       margin: 0 auto;
     }
@@ -144,7 +143,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .about {
+  .main {
     margin-top: -10px;
 
     &__data {

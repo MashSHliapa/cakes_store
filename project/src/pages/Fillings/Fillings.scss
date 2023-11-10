@@ -1,0 +1,29 @@
+.chapter {
+  position: relative;
+
+  &__come-back {
+    position: absolute;
+    top: 0;
+    left: 10px;
+
+    @media screen and (max-width: 1400px) {
+      left: 130px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      left: 50px;
+    }
+
+    @media screen and (max-width: 992px) {
+      left: 140px;
+    }
+
+    @media screen and (max-width: 768px) {
+      position: static;
+      top: auto;
+      left: auto;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+}

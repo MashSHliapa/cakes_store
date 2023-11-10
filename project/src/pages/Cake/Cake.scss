@@ -1,4 +1,11 @@
 .cake {
+  position: relative;
+
+  &__come-back {
+    position: absolute;
+    top: 0;
+    left: 100px;
+  }
 
   &__data {
     margin: 40px auto;
@@ -15,7 +22,6 @@
     padding: 10px;
     font-size: 20px;
     max-width: 750px;
-
   }
 
   &__slogan {
@@ -29,14 +35,32 @@
     padding: 3px;
   }
 
+  &__fillings-link {
+    color: purple;
+    border-bottom: 2px solid purple;
+  }
+
   &__contacts {
     padding: 3px;
     text-align: start;
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .cake {
+    &__come-back {
+      top: 0;
+      left: 10px;
+    }
+  }
+}
+
 @media screen and (max-width: 992px) {
   .cake {
+    &__come-back {
+      top: 0;
+      left: 20px;
+    }
 
     &__data {
       margin: 10px auto;
@@ -56,6 +80,13 @@
 
 @media screen and (max-width: 768px) {
   .cake {
+    &__come-back {
+      text-align: center;
+      margin-bottom: 10px;
+      position: static;
+      top: auto;
+      left: auto;
+    }
 
     &__data {
       margin: 25px auto;

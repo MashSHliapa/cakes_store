@@ -5,6 +5,7 @@ import { PaginationCakes } from '../../components/PaginationCakes'
 import { Title } from '../../components/Title'
 import './Cakes.scss'
 import { LookAll } from '../../components/LookAll'
+import { ReturnToMain } from '../../components/ReturnToMain'
 export function Cakes() {
   // const cakes = useSelector((state) => state.cakes.data) // для получения массива постов из store.
 
@@ -21,7 +22,7 @@ export function Cakes() {
 
   return (
     <div className="cakes">
-      <LookAll/>
+      <ReturnToMain />
       <Title>Торты для Вашего праздника!</Title>
       <ul className="cakes__list d-flex flex-wrap justify-content-center gap-2 m-3">
         {pageNumber && parseInt(pageNumber) == 1 ? cakesPage1 : ''}

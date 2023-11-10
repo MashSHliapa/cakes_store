@@ -1,8 +1,6 @@
 import './MenuBurger.scss'
-import burger from '../images/burger.png'
+import burger from '../images/burger_black.png'
 import { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import { Menu } from '../Menu'
 import { Navbar } from '../Navbar'
 
 export function MenuBurger() {
@@ -24,7 +22,7 @@ export function MenuBurger() {
   return (
     <nav className=''>
       <a href="#">
-        <img className="burger" src={burger} alt="" onClick={handleClickOpenNavbar} />
+        <img className="burger" width={30} height={30} src={burger} alt="" onClick={handleClickOpenNavbar} />
       </a>
       <div className={`nav ${openNavbar ? 'nav__display-block' : 'nav__display-none'}`}><Navbar /></div>
     </nav>

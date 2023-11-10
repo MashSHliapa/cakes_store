@@ -3,10 +3,10 @@ import './LookAll.scss'
 
 export function LookAll() {
   return (
-    <div className="look-all">
-      <div className="look-all__container container">
-        <div className="look-all__title">
-          <NavLink className="look-all__link" to="/cakes/pages/1">Посмотреть все работы</NavLink>
+    <div className="look-all link">
+      <div className="link__container container">
+        <div className="link__title">
+          <NavLink className="link__item" to="/cakes/pages/1">Посмотреть все работы</NavLink>
         </div>
       </div>
     </div>
